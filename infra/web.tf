@@ -96,3 +96,7 @@ resource "aws_s3_object" "folder_css" {
   source       = "../static/css/${each.key}"
 }
 
+output "website_endpoint" {
+  value = data.aws_s3_bucket.selected-bucket.website_endpoint
+}
+
