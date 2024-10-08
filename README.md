@@ -1,21 +1,21 @@
-
 ## Install
 
 ```bash
-cargo install live-server
+npm install
 ```
 
 ## Run
 
 ```bash
-live-server -p 9999 -H 127.0.0.1 -o  static
+npm run dev
 ```
 
 ## Deployment
 
-~~~bash
+```bash
 terraform plan -var-file terraform-dev.tfvars
 terraform apply -var-file terraform-dev.tfvars
 
-!!! It may be necessary to invalidate cache for CloudFront
+# !!! It may be necessary to invalidate cache for CloudFront
 
+```
